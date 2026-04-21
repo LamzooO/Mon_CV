@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Mamadou Lamine DIAWARA</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+        body { background: #e2e8f0; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+        .cv-container { max-width: 1000px; width: 100%; background: white; box-shadow: 0 10px 30px rgba(0,0,0,0.1); display: grid; grid-template-columns: 34% 66%; border-radius: 12px; overflow: hidden; }
+        
+        .sidebar { background: #1e293b; color: #f8fafc; padding: 28px 20px; }
+        .name-title h1 { font-size: 26px; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 4px; color: white; }
+        .name-title h1 span { font-weight: 300; color: #94a3b8; }
+        .name-title .subhead { font-size: 14px; color: #cbd5e1; margin-bottom: 20px; border-bottom: 1px solid #475569; padding-bottom: 15px; }
+        .section-title { font-size: 16px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin: 25px 0 15px 0; color: #94a3b8; border-bottom: 1px solid #475569; padding-bottom: 6px; }
+        .contact-info p { margin-bottom: 6px; font-size: 13px; display: flex; align-items: center; gap: 8px; color: #e2e8f0; }
+        .skill-tag { display: inline-block; background: #334155; color: #f1f5f9; padding: 4px 10px; border-radius: 20px; font-size: 12px; margin: 0 4px 8px 0; font-weight: 400; }
+        .lang-item, .quality-item { font-size: 14px; margin-bottom: 8px; }
+        .quality-item::before { content: "◆"; margin-right: 8px; color: #38bdf8; font-size: 10px; }
+        
+        .main-content { background: white; padding: 28px 25px; }
+        .objective { background: #f1f5f9; padding: 16px 18px; border-radius: 10px; margin-bottom: 25px; font-style: italic; color: #1e293b; border-left: 5px solid #1e293b; font-size: 14px; }
+        .main-title { font-size: 16px; font-weight: 700; color: #1e293b; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 15px; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px; }
+        .edu-item { margin-bottom: 20px; }
+        .edu-title { font-weight: 700; font-size: 16px; color: #0f172a; }
+        .edu-meta { font-size: 13px; color: #475569; margin-bottom: 15px; font-style: italic; }
+        .project-card { margin-bottom: 20px; border-bottom: 1px dashed #cbd5e1; padding-bottom: 15px; }
+        .project-card:last-of-type { border-bottom: none; }
+        .project-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 4px; flex-wrap: wrap; }
+        .project-name { font-weight: 700; font-size: 15px; color: #0f172a; }
+        .project-stack { font-weight: 600; font-size: 12px; color: #2563eb; background: #eff6ff; padding: 2px 8px; border-radius: 20px; }
+        .project-desc { font-size: 13px; color: #334155; margin-top: 5px; line-height: 1.4; }
+        .certif-box { background: #f8fafc; padding: 12px 15px; border-radius: 8px; margin-top: 15px; border: 1px solid #e2e8f0; }
+        .certif-title { font-weight: 700; display: flex; align-items: center; gap: 8px; margin-bottom: 5px; }
+        .footer-note { font-size: 12px; margin-top: 20px; color: #64748b; text-align: right; font-style: italic; }
+
+        /* AJUSTEMENT POUR FORCER UNE SEULE PAGE A4 */
+        @media print {
+            body { background: white; padding: 0; margin: 0; }
+            .cv-container { max-width: 100%; box-shadow: none; border-radius: 0; }
+            .sidebar { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .skill-tag { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+<div class="cv-container">
+    <!-- GAUCHE -->
+    <div class="sidebar">
+        <div class="name-title">
+            <h1>Mamadou Lamine <span>DIAWARA</span></h1>
+            <div class="subhead">Développeur Web & Mobile étudiant<br>Licence 3 Informatique</div>
+        </div>
+        
+        <div class="section-title">Contact</div>
+        <div class="contact-info">
+            <p>📍 Mbour, Thiès — Sénégal</p>
+            <p>✉ laminediawara159@gmail.com</p>
+            <p>☎ +221 77 836 76 51</p>
+        </div>
+
+        <div class="section-title">Compétences</div>
+        <div style="margin-bottom: 5px; font-size:13px; color:#94a3b8;">Langages</div>
+        <div>
+            <span class="skill-tag">C#</span><span class="skill-tag">PHP</span><span class="skill-tag">JavaScript</span><span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Java</span><span class="skill-tag">Python</span>
+        </div>
+        <div style="margin: 15px 0 5px; font-size:13px; color:#94a3b8;">Frameworks & UI</div>
+        <div>
+            <span class="skill-tag">Flutter</span><span class="skill-tag">Angular</span><span class="skill-tag">Laravel</span><span class="skill-tag">JavaFX</span>
+            <span class="skill-tag">Scene Builder</span>
+        </div>
+        <div style="margin: 15px 0 5px; font-size:13px; color:#94a3b8;">Bases de données</div>
+        <div>
+            <span class="skill-tag">MySQL</span><span class="skill-tag">PL/SQL</span><span class="skill-tag">Firebase</span>
+        </div>
+        <div style="margin: 15px 0 5px; font-size:13px; color:#94a3b8;">Backend & Outils</div>
+        <div>
+            <span class="skill-tag">Firebase Auth</span><span class="skill-tag">API REST</span><span class="skill-tag">Git/GitHub</span>
+            <span class="skill-tag">CI/CD</span><span class="skill-tag">UML</span><span class="skill-tag">MVVM</span>
+            <span class="skill-tag">Pentaho PDI</span><span class="skill-tag">Power BI</span><span class="skill-tag">Docker (bases)</span>
+            <span class="skill-tag">Linux (bases)</span>
+        </div>
+
+        <div class="section-title">Langues</div>
+        <div class="lang-item"><span style="font-weight:600;">Français</span> <span style="color:#cbd5e1;"> Courant</span></div>
+        <div class="lang-item"><span style="font-weight:600;">Anglais</span> <span style="color:#cbd5e1;"> Notions techniques</span></div>
+
+        <div class="section-title">Qualités</div>
+        <div class="quality-item">Sérieux et motivé</div>
+        <div class="quality-item">Apprentissage rapide</div>
+        <div class="quality-item">Esprit logique</div>
+        <div class="quality-item">Travail en équipe</div>
+        <div class="quality-item">Sens du détail</div>
+    </div>
+
+    <!-- DROITE -->
+    <div class="main-content">
+        <div class="objective">
+            💡 Obtenir un stage ou un premier emploi (CDD/CDI) afin d'acquérir une expérience professionnelle, renforcer mes compétences techniques et progresser au contact d'une équipe professionnelle.
+        </div>
+
+        <div class="main-title">Formation</div>
+        <div class="edu-item">
+            <div class="edu-title">Licence 3 Informatique</div>
+            <div class="edu-meta">Programmation & Développement Web et Mobile · Sup'Info — Sénégal · En cours</div>
+        </div>
+
+        <div class="main-title">Projets Académiques</div>
+        
+        <div class="project-card">
+            <div class="project-header">
+                <span class="project-name">JayKatt – Gestion commerciale mobile</span>
+                <span class="project-stack">Flutter · Firebase · MVVM · CI/CD</span>
+            </div>
+            <div class="project-desc">Application pour commerçants non techniques : gestion des produits, stocks, ventes et crédits clients. Interface simple et intuitive. Déploiement automatisé via CI/CD sur Firebase Hosting à chaque push.</div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-header">
+                <span class="project-name">Gestion Clinique – Système hospitalier</span>
+                <span class="project-stack">Angular · TypeScript</span>
+            </div>
+            <div class="project-desc">Système de gestion hospitalière complet : enregistrement patients, dossiers médicaux numériques, consultations, ordonnances, rendez-vous et gestion des rôles (admin, médecin, secrétaire, patient).</div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-header">
+                <span class="project-name">Application Bancaire</span>
+                <span class="project-stack">Laravel · PHP · MySQL</span>
+            </div>
+            <div class="project-desc">Gestion complète des clients et comptes bancaires. Implémentation des règles métier et cycle de vie des opérations. Application déployée et accessible en ligne via la plateforme cloud Render.</div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-header">
+                <span class="project-name">Application Desktop Java</span>
+                <span class="project-stack">Java · JavaFX · Scene Builder</span>
+            </div>
+            <div class="project-desc">Développement d'une application desktop avec interface graphique. Conception des vues avec SceneBuilder et intégration JavaFX.</div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-header">
+                <span class="project-name">ETL – Business Intelligence</span>
+                <span class="project-stack">Pentaho PDI · MySQL</span>
+            </div>
+            <div class="project-desc">Extraction d'un fichier CSV de ventes, filtrage et résolution des codes postaux manquants (nettoyage), standardisation et chargement en base de données.</div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-header">
+                <span class="project-name">Jeu Labyrinthe – Algo</span>
+                <span class="project-stack">Python</span>
+            </div>
+            <div class="project-desc">Implémentation de la logique de déplacement et règles du jeu avec application d'algorithmes de parcours.</div>
+        </div>
+
+        <div class="main-title">Certification</div>
+        <div class="certif-box">
+            <div class="certif-title">
+                <span style="font-size:20px;">🏅</span> Microsoft – Foundational C#
+            </div>
+            <div style="font-size:13px; color:#334155;">Programmation orientée objet · Bases solides du langage C#</div>
+        </div>
+
+        <div class="footer-note">
+            Disponible immédiatement pour un stage ou un premier contrat  ·  Références académiques disponibles sur demande
+        </div>
+    </div>
+</div>
+</body>
+</html>
